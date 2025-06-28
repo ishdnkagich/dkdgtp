@@ -1,0 +1,12 @@
+[build]
+  command = "npm install"
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  SUPABASE_URL = "https://your-project.supabase.co"
+  SUPABASE_SERVICE_KEY = "your-service-role-key"
+
+[functions]
+  node_bundler = "esbuild"
+  timeout = 30
